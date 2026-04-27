@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Art of Writing Clean Code | Nishant's Vlogs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-50 text-gray-800" style="font-family: 'Poppins', sans-serif;">
+
+  <!-- Navbar -->
+  <nav class="bg-blue-600 text-white p-4">
+    <div class="max-w-6xl mx-auto flex justify-between">
+      <a href="/" class="font-bold text-xl">Nishant's Vlogs</a>
+      <a href="/about" class="hover:underline">About</a>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <main class="max-w-6xl mx-auto px-6 py-10">
+    <h1 id="the-art-of-writing-clean-code">The Art of Writing Clean Code</h1>
+
+<p>Writing code that works is one thing. Writing code that’s clean, readable, and maintainable is another. Let’s explore the principles of clean code.</p>
+
+<h2 id="1-meaningful-names">1. Meaningful Names</h2>
+
+<p>Choose names that reveal intent:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Bad</span>
+<span class="kd">const</span> <span class="nx">d</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Date</span><span class="p">();</span>
+<span class="kd">const</span> <span class="nx">yyyymmdstr</span> <span class="o">=</span> <span class="nx">d</span><span class="p">.</span><span class="nf">getFullYear</span><span class="p">()</span> <span class="o">+</span> <span class="dl">'</span><span class="s1">-</span><span class="dl">'</span> <span class="o">+</span> <span class="p">(</span><span class="nx">d</span><span class="p">.</span><span class="nf">getMonth</span><span class="p">()</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="dl">'</span><span class="s1">-</span><span class="dl">'</span> <span class="o">+</span> <span class="nx">d</span><span class="p">.</span><span class="nf">getDate</span><span class="p">();</span>
+
+<span class="c1">// Good</span>
+<span class="kd">const</span> <span class="nx">today</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Date</span><span class="p">();</span>
+<span class="kd">const</span> <span class="nx">formattedDate</span> <span class="o">=</span> <span class="nf">formatDateToISO</span><span class="p">(</span><span class="nx">today</span><span class="p">);</span>
+</code></pre></div></div>
+
+<h2 id="2-functions-should-do-one-thing">2. Functions Should Do One Thing</h2>
+
+<p>Apply the Single Responsibility Principle:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Bad - does too much</span>
+<span class="kd">function</span> <span class="nf">processUserData</span><span class="p">(</span><span class="nx">user</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nf">validateUser</span><span class="p">(</span><span class="nx">user</span><span class="p">);</span>
+  <span class="kd">const</span> <span class="nx">userData</span> <span class="o">=</span> <span class="nf">formatUser</span><span class="p">(</span><span class="nx">user</span><span class="p">);</span>
+  <span class="nf">saveToDatabase</span><span class="p">(</span><span class="nx">userData</span><span class="p">);</span>
+  <span class="nf">sendEmail</span><span class="p">(</span><span class="nx">user</span><span class="p">.</span><span class="nx">email</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="c1">// Good - each function has one purpose</span>
+<span class="kd">function</span> <span class="nf">processUserData</span><span class="p">(</span><span class="nx">user</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nf">validateUser</span><span class="p">(</span><span class="nx">user</span><span class="p">);</span>
+  <span class="nf">saveFormattedUser</span><span class="p">(</span><span class="nx">user</span><span class="p">);</span>
+  <span class="nf">notifyUser</span><span class="p">(</span><span class="nx">user</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="3-keep-functions-small">3. Keep Functions Small</h2>
+
+<p>Smaller functions are easier to understand and test:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Bad - 50 lines</span>
+<span class="kd">function</span> <span class="nf">buildReport</span><span class="p">(</span><span class="nx">data</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// validation, calculation, formatting, saving...</span>
+<span class="p">}</span>
+
+<span class="c1">// Good - each function is focused</span>
+<span class="kd">function</span> <span class="nf">buildReport</span><span class="p">(</span><span class="nx">data</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kd">const</span> <span class="nx">validated</span> <span class="o">=</span> <span class="nf">validateData</span><span class="p">(</span><span class="nx">data</span><span class="p">);</span>
+  <span class="kd">const</span> <span class="nx">calculated</span> <span class="o">=</span> <span class="nf">performCalculations</span><span class="p">(</span><span class="nx">validated</span><span class="p">);</span>
+  <span class="kd">const</span> <span class="nx">formatted</span> <span class="o">=</span> <span class="nf">formatOutput</span><span class="p">(</span><span class="nx">calculated</span><span class="p">);</span>
+  <span class="k">return</span> <span class="nf">saveReport</span><span class="p">(</span><span class="nx">formatted</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="4-use-comments-wisely">4. Use Comments Wisely</h2>
+
+<p>Comments should explain <strong>why</strong>, not <strong>what</strong>:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Bad - just describes the code</span>
+<span class="kd">const</span> <span class="nx">users</span> <span class="o">=</span> <span class="nf">getUsers</span><span class="p">();</span> <span class="c1">// Get all users</span>
+
+<span class="c1">// Good - explains the business logic</span>
+<span class="c1">// We need users with active subscriptions for the billing cycle</span>
+<span class="kd">const</span> <span class="nx">activeUsers</span> <span class="o">=</span> <span class="nf">getUsers</span><span class="p">().</span><span class="nf">filter</span><span class="p">(</span><span class="nx">u</span> <span class="o">=&gt;</span> <span class="nx">u</span><span class="p">.</span><span class="nx">subscriptionActive</span><span class="p">);</span>
+</code></pre></div></div>
+
+<h2 id="5-dry---dont-repeat-yourself">5. DRY - Don’t Repeat Yourself</h2>
+
+<p>Refactor repeated code into reusable functions:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Bad - repeated validation</span>
+<span class="k">if </span><span class="p">(</span><span class="nx">email</span> <span class="o">&amp;&amp;</span> <span class="nx">email</span><span class="p">.</span><span class="nf">includes</span><span class="p">(</span><span class="dl">'</span><span class="s1">@</span><span class="dl">'</span><span class="p">))</span> <span class="p">{</span>
+  <span class="c1">// process email</span>
+<span class="p">}</span>
+<span class="k">if </span><span class="p">(</span><span class="nx">backup</span> <span class="o">&amp;&amp;</span> <span class="nx">backup</span><span class="p">.</span><span class="nf">includes</span><span class="p">(</span><span class="dl">'</span><span class="s1">@</span><span class="dl">'</span><span class="p">))</span> <span class="p">{</span>
+  <span class="c1">// process backup</span>
+<span class="p">}</span>
+
+<span class="c1">// Good - reusable function</span>
+<span class="kd">function</span> <span class="nf">isValidEmail</span><span class="p">(</span><span class="nx">email</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="nx">email</span> <span class="o">&amp;&amp;</span> <span class="nx">email</span><span class="p">.</span><span class="nf">includes</span><span class="p">(</span><span class="dl">'</span><span class="s1">@</span><span class="dl">'</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="k">if </span><span class="p">(</span><span class="nf">isValidEmail</span><span class="p">(</span><span class="nx">email</span><span class="p">))</span> <span class="p">{</span> <span class="cm">/* ... */</span> <span class="p">}</span>
+<span class="k">if </span><span class="p">(</span><span class="nf">isValidEmail</span><span class="p">(</span><span class="nx">backup</span><span class="p">))</span> <span class="p">{</span> <span class="cm">/* ... */</span> <span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="6-use-proper-error-handling">6. Use Proper Error Handling</h2>
+
+<p>Never ignore errors:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Bad</span>
+<span class="k">try</span> <span class="p">{</span>
+  <span class="nf">fetchData</span><span class="p">();</span>
+<span class="p">}</span> <span class="k">catch </span><span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// Silently failing!</span>
+<span class="p">}</span>
+
+<span class="c1">// Good</span>
+<span class="k">try</span> <span class="p">{</span>
+  <span class="nf">fetchData</span><span class="p">();</span>
+<span class="p">}</span> <span class="k">catch </span><span class="p">(</span><span class="nx">error</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">logger</span><span class="p">.</span><span class="nf">error</span><span class="p">(</span><span class="dl">'</span><span class="s1">Failed to fetch data</span><span class="dl">'</span><span class="p">,</span> <span class="nx">error</span><span class="p">);</span>
+  <span class="k">throw</span> <span class="k">new</span> <span class="nc">CustomError</span><span class="p">(</span><span class="dl">'</span><span class="s1">Data fetch failed</span><span class="dl">'</span><span class="p">,</span> <span class="nx">error</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="7-keep-it-simple-kiss">7. Keep It Simple (KISS)</h2>
+
+<p>Avoid over-engineering:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Over-engineered</span>
+<span class="kd">const</span> <span class="nx">calculatePrice</span> <span class="o">=</span> <span class="p">(</span><span class="nx">quantity</span><span class="p">,</span> <span class="nx">unitPrice</span><span class="p">)</span> <span class="o">=&gt;</span> 
+  <span class="nx">quantity</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="p">?</span> <span class="p">(</span><span class="nx">quantity</span> <span class="o">*</span> <span class="nx">unitPrice</span><span class="p">)</span> <span class="o">-</span> <span class="p">(</span><span class="nx">quantity</span> <span class="o">&gt;</span> <span class="mi">10</span> <span class="p">?</span> <span class="nx">quantity</span> <span class="o">*</span> <span class="nx">unitPrice</span> <span class="o">*</span> <span class="mf">0.1</span> <span class="p">:</span> <span class="mi">0</span><span class="p">)</span> <span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+
+<span class="c1">// Simple and clear</span>
+<span class="kd">function</span> <span class="nf">calculatePrice</span><span class="p">(</span><span class="nx">quantity</span><span class="p">,</span> <span class="nx">unitPrice</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kd">const</span> <span class="nx">basePrice</span> <span class="o">=</span> <span class="nx">quantity</span> <span class="o">*</span> <span class="nx">unitPrice</span><span class="p">;</span>
+  <span class="kd">const</span> <span class="nx">discount</span> <span class="o">=</span> <span class="nx">quantity</span> <span class="o">&gt;</span> <span class="mi">10</span> <span class="p">?</span> <span class="nx">basePrice</span> <span class="o">*</span> <span class="mf">0.1</span> <span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="k">return</span> <span class="nb">Math</span><span class="p">.</span><span class="nf">max</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nx">basePrice</span> <span class="o">-</span> <span class="nx">discount</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="8-testing-is-not-optional">8. Testing is Not Optional</h2>
+
+<p>Write tests as you write code:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">describe</span><span class="p">(</span><span class="dl">'</span><span class="s1">calculateDiscount</span><span class="dl">'</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="nf">it</span><span class="p">(</span><span class="dl">'</span><span class="s1">should apply 10% discount for quantities over 10</span><span class="dl">'</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="nf">expect</span><span class="p">(</span><span class="nf">calculateDiscount</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">100</span><span class="p">)).</span><span class="nf">toBe</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span>
+  <span class="p">});</span>
+  
+  <span class="nf">it</span><span class="p">(</span><span class="dl">'</span><span class="s1">should not apply discount for quantities &lt;= 10</span><span class="dl">'</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="nf">expect</span><span class="p">(</span><span class="nf">calculateDiscount</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">100</span><span class="p">)).</span><span class="nf">toBe</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+  <span class="p">});</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<h2 id="9-consistent-formatting">9. Consistent Formatting</h2>
+
+<p>Use a formatter like Prettier:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Let Prettier handle this</span>
+<span class="kd">const</span> <span class="nx">user</span> <span class="o">=</span> <span class="p">{</span> <span class="na">name</span><span class="p">:</span> <span class="dl">"</span><span class="s2">John</span><span class="dl">"</span><span class="p">,</span> <span class="na">age</span><span class="p">:</span> <span class="mi">30</span><span class="p">,</span> <span class="na">email</span><span class="p">:</span> <span class="dl">"</span><span class="s2">john@example.com</span><span class="dl">"</span> <span class="p">};</span>
+<span class="kd">const</span> <span class="nx">result</span> <span class="o">=</span> <span class="nf">someFunction</span><span class="p">(</span><span class="nx">arg1</span><span class="p">,</span> <span class="nx">arg2</span><span class="p">,</span> <span class="nx">arg3</span><span class="p">);</span>
+</code></pre></div></div>
+
+<h2 id="10-code-review-culture">10. Code Review Culture</h2>
+
+<p>Have peers review your code. Fresh eyes catch issues you miss!</p>
+
+<h2 id="key-principles">Key Principles</h2>
+
+<ul>
+  <li><strong>Readability</strong> - Your code is read 10x more than it’s written</li>
+  <li><strong>Maintainability</strong> - Future you will thank present you</li>
+  <li><strong>Testability</strong> - Easy to test = easy to verify</li>
+  <li><strong>Reusability</strong> - Write once, use many times</li>
+</ul>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Clean code is not about being perfect. It’s about respect—for your team, for future maintainers, and for yourself reading this code months later.</p>
+
+<blockquote>
+  <p>“Any fool can write code that a computer can understand. Good programmers write code that humans can understand.” - Martin Fowler</p>
+</blockquote>
+
+<hr />
+
+<p><strong>What’s your clean code practice? Drop a comment!</strong> ✨</p>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300 py-6 text-center">
+    <p>&copy; 2026 Nishant's Vlogs</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,667 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2026-04-27T23:07:46+05:30</updated><id>http://localhost:4000/feed.xml</id><title type="html">Nishant’s Vlogs</title><subtitle>A modern blog powered by GitHub Pages</subtitle><entry><title type="html">Welcome to Second Blog</title><link href="http://localhost:4000/2026/04/27/first-copy.html" rel="alternate" type="text/html" title="Welcome to Second Blog" /><published>2026-04-27T00:00:00+05:30</published><updated>2026-04-27T00:00:00+05:30</updated><id>http://localhost:4000/2026/04/27/first%20copy</id><content type="html" xml:base="http://localhost:4000/2026/04/27/first-copy.html"><![CDATA[<h1 id="all-about-routine">All about routine</h1>
+<p>Busy at work all the time
+Tech Debts</p>]]></content><author><name></name></author><summary type="html"><![CDATA[All about routine Busy at work all the time Tech Debts]]></summary></entry><entry><title type="html">Welcome to TrendifyVogue</title><link href="http://localhost:4000/2026/04/26/first.html" rel="alternate" type="text/html" title="Welcome to TrendifyVogue" /><published>2026-04-26T00:00:00+05:30</published><updated>2026-04-26T00:00:00+05:30</updated><id>http://localhost:4000/2026/04/26/first</id><content type="html" xml:base="http://localhost:4000/2026/04/26/first.html"><![CDATA[<h1 id="hi-from-nishant">Hi from Nishant</h1>
+
+<ol>
+  <li>This is your first blog post to begin <strong>Tech Writing</strong>.</li>
+  <li>This has been written using GitHub Pages and Jekyll.</li>
+  <li>I have been using gitlab for a while and today I found github as very useful instead.</li>
+</ol>]]></content><author><name></name></author><summary type="html"><![CDATA[Hi from Nishant]]></summary></entry><entry><title type="html">Getting Started with Jekyll &amp;amp; GitHub Pages</title><link href="http://localhost:4000/2026/04/26/getting-started-jekyll.html" rel="alternate" type="text/html" title="Getting Started with Jekyll &amp;amp; GitHub Pages" /><published>2026-04-26T00:00:00+05:30</published><updated>2026-04-26T00:00:00+05:30</updated><id>http://localhost:4000/2026/04/26/getting-started-jekyll</id><content type="html" xml:base="http://localhost:4000/2026/04/26/getting-started-jekyll.html"><![CDATA[<h1 id="getting-started-with-jekyll--github-pages">Getting Started with Jekyll &amp; GitHub Pages</h1>
+
+<p>Jekyll and GitHub Pages are a match made in heaven for developers who want a simple, fast, and free blogging platform. In this post, I’ll walk you through the basics.</p>
+
+<h2 id="what-is-jekyll">What is Jekyll?</h2>
+
+<p>Jekyll is a <strong>static site generator</strong> that transforms your plain text files into a beautiful website. It’s:</p>
+<ul>
+  <li><strong>Fast</strong> - No database queries, just static HTML</li>
+  <li><strong>Secure</strong> - No server-side code to hack</li>
+  <li><strong>Simple</strong> - Write in Markdown, deploy with git</li>
+</ul>
+
+<h2 id="why-github-pages">Why GitHub Pages?</h2>
+
+<p>GitHub Pages provides <strong>free hosting</strong> directly from your GitHub repository. It has built-in Jekyll support, which means you can:</p>
+<ul>
+  <li>Write posts in Markdown</li>
+  <li>Push to GitHub</li>
+  <li>Your site updates automatically</li>
+</ul>
+
+<h2 id="getting-started">Getting Started</h2>
+
+<ol>
+  <li><strong>Install Ruby</strong> - Download from <a href="https://rubyinstaller.org/">rubyinstaller.org</a></li>
+  <li><strong>Install Jekyll</strong> - Run <code class="language-plaintext highlighter-rouge">gem install jekyll bundler</code></li>
+  <li><strong>Create a new site</strong> - Run <code class="language-plaintext highlighter-rouge">jekyll new my-blog</code></li>
+  <li><strong>Run locally</strong> - Run <code class="language-plaintext highlighter-rouge">bundle exec jekyll serve</code></li>
+  <li><strong>Visit</strong> - Open <code class="language-plaintext highlighter-rouge">http://localhost:4000</code></li>
+</ol>
+
+<h2 id="creating-your-first-post">Creating Your First Post</h2>
+
+<p>Create a file in <code class="language-plaintext highlighter-rouge">_posts/</code> folder with the format: <code class="language-plaintext highlighter-rouge">YYYY-MM-DD-title.md</code></p>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
+<span class="na">layout</span><span class="pi">:</span> <span class="s">post</span>
+<span class="na">title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">My</span><span class="nv"> </span><span class="s">First</span><span class="nv"> </span><span class="s">Post"</span>
+<span class="na">date</span><span class="pi">:</span> <span class="s">2026-04-26</span>
+<span class="nn">---</span>
+
+<span class="gh"># Hello World!</span>
+
+This is my first post written in Markdown.
+</code></pre></div></div>
+
+<h2 id="deploying-to-github-pages">Deploying to GitHub Pages</h2>
+
+<ol>
+  <li>Push your site to GitHub</li>
+  <li>Go to repository Settings → Pages</li>
+  <li>Select “Deploy from a branch” → main branch</li>
+  <li>Your site will be live at <code class="language-plaintext highlighter-rouge">https://yourusername.github.io</code></li>
+</ol>
+
+<p>That’s it! You now have a live blog! 🎉</p>
+
+<hr />
+
+<p><strong>Next Steps:</strong></p>
+<ul>
+  <li>Customize your theme</li>
+  <li>Add more posts</li>
+  <li>Connect a custom domain</li>
+  <li>Add comments (using Disqus or similar)</li>
+</ul>
+
+<p>Happy blogging!</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Learn how to set up a beautiful blog using Jekyll and GitHub Pages in just a few minutes.]]></summary></entry><entry><title type="html">Modern Web Development Tools You Should Know</title><link href="http://localhost:4000/2026/04/24/modern-web-tools.html" rel="alternate" type="text/html" title="Modern Web Development Tools You Should Know" /><published>2026-04-24T00:00:00+05:30</published><updated>2026-04-24T00:00:00+05:30</updated><id>http://localhost:4000/2026/04/24/modern-web-tools</id><content type="html" xml:base="http://localhost:4000/2026/04/24/modern-web-tools.html"><![CDATA[<h1 id="modern-web-development-tools-you-should-know">Modern Web Development Tools You Should Know</h1>
+
+<p>The web development landscape is constantly evolving. Here are some tools that every developer should be familiar with in 2026.</p>
+
+<h2 id="frontend-frameworks">Frontend Frameworks</h2>
+
+<h3 id="react">React</h3>
+<p>React continues to dominate the frontend ecosystem. Its component-based approach makes building complex UIs manageable and reusable.</p>
+
+<h3 id="vuejs">Vue.js</h3>
+<p>Vue offers a gentler learning curve than React while maintaining powerful features. Perfect for both beginners and experienced developers.</p>
+
+<h3 id="svelte">Svelte</h3>
+<p>Svelte compiles your components to vanilla JavaScript, resulting in incredibly small bundle sizes and blazing-fast applications.</p>
+
+<h2 id="build-tools">Build Tools</h2>
+
+<h3 id="vite">Vite</h3>
+<p>Vite has revolutionized the development experience with its lightning-fast hot module replacement (HMR) and minimal configuration.</p>
+
+<p><strong>Why Vite?</strong></p>
+<ul>
+  <li>⚡ Instant server start</li>
+  <li>🔥 Lightning-fast HMR</li>
+  <li>📦 Optimized build</li>
+  <li>🎯 Unified plugin interface</li>
+</ul>
+
+<h3 id="turborepo">Turborepo</h3>
+<p>For monorepo management, Turborepo is the gold standard. It handles build caching, task scheduling, and parallel execution.</p>
+
+<h2 id="styling-solutions">Styling Solutions</h2>
+
+<h3 id="tailwind-css">Tailwind CSS</h3>
+<p>Utility-first CSS that lets you build beautiful designs without writing custom CSS. It’s become the go-to for many developers.</p>
+
+<h3 id="css-in-js">CSS-in-JS</h3>
+<p>Libraries like Styled Components and Emotion let you write CSS directly in your JavaScript.</p>
+
+<h2 id="development-practices">Development Practices</h2>
+
+<h3 id="typescript">TypeScript</h3>
+<p>Adding type safety to JavaScript catches errors early and makes code more maintainable. If you haven’t tried it, now is the time.</p>
+
+<h3 id="testing">Testing</h3>
+<ul>
+  <li><strong>Unit Testing</strong>: Jest, Vitest</li>
+  <li><strong>E2E Testing</strong>: Cypress, Playwright</li>
+  <li><strong>API Testing</strong>: Postman, Insomnia</li>
+</ul>
+
+<h3 id="version-control">Version Control</h3>
+<p>Git remains essential. Master these commands:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">git rebase</code> for clean history</li>
+  <li><code class="language-plaintext highlighter-rouge">git stash</code> for temporary changes</li>
+  <li><code class="language-plaintext highlighter-rouge">git cherry-pick</code> for selective commits</li>
+</ul>
+
+<h2 id="devops--deployment">DevOps &amp; Deployment</h2>
+
+<h3 id="docker">Docker</h3>
+<p>Containerization ensures consistency across development and production environments.</p>
+
+<h3 id="github-actions">GitHub Actions</h3>
+<p>Automate your workflow with CI/CD pipelines directly in GitHub.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>The tools you choose should match your project needs and team expertise. Don’t chase every new tool—master the fundamentals first, then explore new technologies strategically.</p>
+
+<p><strong>What’s your favorite tool? Share in the comments!</strong></p>
+
+<hr />
+
+<p><em>Stay tuned for deeper dives into each of these tools!</em></p>]]></content><author><name></name></author><summary type="html"><![CDATA[Explore the best tools that are shaping modern web development in 2026.]]></summary></entry><entry><title type="html">JavaScript Tips &amp;amp; Tricks You Might Not Know</title><link href="http://localhost:4000/2026/04/22/javascript-tips.html" rel="alternate" type="text/html" title="JavaScript Tips &amp;amp; Tricks You Might Not Know" /><published>2026-04-22T00:00:00+05:30</published><updated>2026-04-22T00:00:00+05:30</updated><id>http://localhost:4000/2026/04/22/javascript-tips</id><content type="html" xml:base="http://localhost:4000/2026/04/22/javascript-tips.html"><![CDATA[<h1 id="javascript-tips--tricks-you-might-not-know">JavaScript Tips &amp; Tricks You Might Not Know</h1>
+
+<p>JavaScript has some powerful features that many developers overlook. Let’s explore some of them!</p>
+
+<h2 id="1-optional-chaining-">1. Optional Chaining (?.)</h2>
+
+<p>Stop writing nested conditionals:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Old way</span>
+<span class="kd">const</span> <span class="nx">city</span> <span class="o">=</span> <span class="nx">user</span> <span class="o">&amp;&amp;</span> <span class="nx">user</span><span class="p">.</span><span class="nx">address</span> <span class="o">&amp;&amp;</span> <span class="nx">user</span><span class="p">.</span><span class="nx">address</span><span class="p">.</span><span class="nx">city</span><span class="p">;</span>
+
+<span class="c1">// New way</span>
+<span class="kd">const</span> <span class="nx">city</span> <span class="o">=</span> <span class="nx">user</span><span class="p">?.</span><span class="nx">address</span><span class="p">?.</span><span class="nx">city</span><span class="p">;</span>
+</code></pre></div></div>
+
+<h2 id="2-nullish-coalescing-">2. Nullish Coalescing (??)</h2>
+
+<p>Use <code class="language-plaintext highlighter-rouge">??</code> instead of <code class="language-plaintext highlighter-rouge">||</code> to handle null/undefined:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// || treats 0, '', false as falsy</span>
+<span class="kd">const</span> <span class="nx">count</span> <span class="o">=</span> <span class="nx">userInput</span> <span class="o">||</span> <span class="mi">5</span><span class="p">;</span> <span class="c1">// Returns 5 if userInput is 0</span>
+
+<span class="c1">// ?? only treats null and undefined as falsy</span>
+<span class="kd">const</span> <span class="nx">count</span> <span class="o">=</span> <span class="nx">userInput</span> <span class="o">??</span> <span class="mi">5</span><span class="p">;</span> <span class="c1">// Returns 0 if userInput is 0</span>
+</code></pre></div></div>
+
+<h2 id="3-destructuring-assignment">3. Destructuring Assignment</h2>
+
+<p>Make variable extraction cleaner:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Objects</span>
+<span class="kd">const</span> <span class="p">{</span> <span class="nx">name</span><span class="p">,</span> <span class="nx">age</span> <span class="p">}</span> <span class="o">=</span> <span class="nx">user</span><span class="p">;</span>
+
+<span class="c1">// Arrays</span>
+<span class="kd">const</span> <span class="p">[</span><span class="nx">first</span><span class="p">,</span> <span class="nx">second</span><span class="p">]</span> <span class="o">=</span> <span class="nx">array</span><span class="p">;</span>
+
+<span class="c1">// Nested</span>
+<span class="kd">const</span> <span class="p">{</span> <span class="na">user</span><span class="p">:</span> <span class="p">{</span> <span class="nx">name</span><span class="p">,</span> <span class="na">address</span><span class="p">:</span> <span class="p">{</span> <span class="nx">city</span> <span class="p">}</span> <span class="p">}</span> <span class="p">}</span> <span class="o">=</span> <span class="nx">data</span><span class="p">;</span>
+</code></pre></div></div>
+
+<h2 id="4-spread-operator-">4. Spread Operator (…)</h2>
+
+<p>Simplify array and object operations:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Merge arrays</span>
+<span class="kd">const</span> <span class="nx">combined</span> <span class="o">=</span> <span class="p">[...</span><span class="nx">arr1</span><span class="p">,</span> <span class="p">...</span><span class="nx">arr2</span><span class="p">];</span>
+
+<span class="c1">// Merge objects</span>
+<span class="kd">const</span> <span class="nx">merged</span> <span class="o">=</span> <span class="p">{</span> <span class="p">...</span><span class="nx">obj1</span><span class="p">,</span> <span class="p">...</span><span class="nx">obj2</span> <span class="p">};</span>
+
+<span class="c1">// Copy array</span>
+<span class="kd">const</span> <span class="nx">copy</span> <span class="o">=</span> <span class="p">[...</span><span class="nx">original</span><span class="p">];</span>
+</code></pre></div></div>
+
+<h2 id="5-array-methods">5. Array Methods</h2>
+
+<h3 id="map">map()</h3>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">doubled</span> <span class="o">=</span> <span class="nx">numbers</span><span class="p">.</span><span class="nf">map</span><span class="p">(</span><span class="nx">n</span> <span class="o">=&gt;</span> <span class="nx">n</span> <span class="o">*</span> <span class="mi">2</span><span class="p">);</span>
+</code></pre></div></div>
+
+<h3 id="filter">filter()</h3>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">adults</span> <span class="o">=</span> <span class="nx">users</span><span class="p">.</span><span class="nf">filter</span><span class="p">(</span><span class="nx">u</span> <span class="o">=&gt;</span> <span class="nx">u</span><span class="p">.</span><span class="nx">age</span> <span class="o">&gt;=</span> <span class="mi">18</span><span class="p">);</span>
+</code></pre></div></div>
+
+<h3 id="reduce">reduce()</h3>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">sum</span> <span class="o">=</span> <span class="nx">numbers</span><span class="p">.</span><span class="nf">reduce</span><span class="p">((</span><span class="nx">acc</span><span class="p">,</span> <span class="nx">n</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">acc</span> <span class="o">+</span> <span class="nx">n</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+</code></pre></div></div>
+
+<h3 id="find--findindex">find() &amp; findIndex()</h3>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">user</span> <span class="o">=</span> <span class="nx">users</span><span class="p">.</span><span class="nf">find</span><span class="p">(</span><span class="nx">u</span> <span class="o">=&gt;</span> <span class="nx">u</span><span class="p">.</span><span class="nx">id</span> <span class="o">===</span> <span class="mi">5</span><span class="p">);</span>
+</code></pre></div></div>
+
+<h2 id="6-template-literals">6. Template Literals</h2>
+
+<p>Use backticks for easy string interpolation:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">name</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">Alice</span><span class="dl">"</span><span class="p">;</span>
+<span class="kd">const</span> <span class="nx">message</span> <span class="o">=</span> <span class="s2">`Hello, </span><span class="p">${</span><span class="nx">name</span><span class="p">}</span><span class="s2">! You are </span><span class="p">${</span><span class="nx">age</span><span class="p">}</span><span class="s2"> years old.`</span><span class="p">;</span>
+</code></pre></div></div>
+
+<h2 id="7-arrow-functions">7. Arrow Functions</h2>
+
+<p>Concise function syntax:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Traditional</span>
+<span class="kd">function</span> <span class="nf">add</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="nx">a</span> <span class="o">+</span> <span class="nx">b</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c1">// Arrow function</span>
+<span class="kd">const</span> <span class="nx">add</span> <span class="o">=</span> <span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">a</span> <span class="o">+</span> <span class="nx">b</span><span class="p">;</span>
+
+<span class="c1">// With object return</span>
+<span class="kd">const</span> <span class="nx">getUser</span> <span class="o">=</span> <span class="nx">id</span> <span class="o">=&gt;</span> <span class="p">({</span> <span class="nx">id</span><span class="p">,</span> <span class="na">name</span><span class="p">:</span> <span class="dl">"</span><span class="s2">John</span><span class="dl">"</span> <span class="p">});</span>
+</code></pre></div></div>
+
+<h2 id="8-asyncawait">8. Async/Await</h2>
+
+<p>Much cleaner than promise chaining:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Promise chaining</span>
+<span class="nf">fetchUser</span><span class="p">()</span>
+  <span class="p">.</span><span class="nf">then</span><span class="p">(</span><span class="nx">user</span> <span class="o">=&gt;</span> <span class="nf">fetchPosts</span><span class="p">(</span><span class="nx">user</span><span class="p">.</span><span class="nx">id</span><span class="p">))</span>
+  <span class="p">.</span><span class="nf">then</span><span class="p">(</span><span class="nx">posts</span> <span class="o">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nf">log</span><span class="p">(</span><span class="nx">posts</span><span class="p">))</span>
+  <span class="p">.</span><span class="k">catch</span><span class="p">(</span><span class="nx">error</span> <span class="o">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nf">error</span><span class="p">(</span><span class="nx">error</span><span class="p">));</span>
+
+<span class="c1">// Async/Await</span>
+<span class="k">async</span> <span class="kd">function</span> <span class="nf">getUserPosts</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">try</span> <span class="p">{</span>
+    <span class="kd">const</span> <span class="nx">user</span> <span class="o">=</span> <span class="k">await</span> <span class="nf">fetchUser</span><span class="p">();</span>
+    <span class="kd">const</span> <span class="nx">posts</span> <span class="o">=</span> <span class="k">await</span> <span class="nf">fetchPosts</span><span class="p">(</span><span class="nx">user</span><span class="p">.</span><span class="nx">id</span><span class="p">);</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nf">log</span><span class="p">(</span><span class="nx">posts</span><span class="p">);</span>
+  <span class="p">}</span> <span class="k">catch </span><span class="p">(</span><span class="nx">error</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nf">error</span><span class="p">(</span><span class="nx">error</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="9-logical-operators-for-conditionals">9. Logical Operators for Conditionals</h2>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Traditional if</span>
+<span class="k">if </span><span class="p">(</span><span class="nx">isAdmin</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nf">showAdminPanel</span><span class="p">();</span>
+<span class="p">}</span>
+
+<span class="c1">// Using &amp;&amp;</span>
+<span class="nx">isAdmin</span> <span class="o">&amp;&amp;</span> <span class="nf">showAdminPanel</span><span class="p">();</span>
+
+<span class="c1">// Using ||</span>
+<span class="kd">const</span> <span class="nx">role</span> <span class="o">=</span> <span class="nx">userRole</span> <span class="o">||</span> <span class="dl">"</span><span class="s2">guest</span><span class="dl">"</span><span class="p">;</span>
+</code></pre></div></div>
+
+<h2 id="10-objectkeys-values-entries">10. Object.keys(), values(), entries()</h2>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">user</span> <span class="o">=</span> <span class="p">{</span> <span class="na">name</span><span class="p">:</span> <span class="dl">"</span><span class="s2">John</span><span class="dl">"</span><span class="p">,</span> <span class="na">age</span><span class="p">:</span> <span class="mi">30</span><span class="p">,</span> <span class="na">city</span><span class="p">:</span> <span class="dl">"</span><span class="s2">NYC</span><span class="dl">"</span> <span class="p">};</span>
+
+<span class="nb">Object</span><span class="p">.</span><span class="nf">keys</span><span class="p">(</span><span class="nx">user</span><span class="p">);</span>      <span class="c1">// ["name", "age", "city"]</span>
+<span class="nb">Object</span><span class="p">.</span><span class="nf">values</span><span class="p">(</span><span class="nx">user</span><span class="p">);</span>    <span class="c1">// ["John", 30, "NYC"]</span>
+<span class="nb">Object</span><span class="p">.</span><span class="nf">entries</span><span class="p">(</span><span class="nx">user</span><span class="p">);</span>   <span class="c1">// [["name", "John"], ["age", 30], ...]</span>
+</code></pre></div></div>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>These features make JavaScript code more readable, concise, and efficient. Master them, and you’ll write better code!</p>
+
+<hr />
+
+<p><strong>Have more tips? Share them below!</strong> 💻</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Discover lesser-known JavaScript features that can make your code cleaner and more efficient.]]></summary></entry><entry><title type="html">The Art of Writing Clean Code</title><link href="http://localhost:4000/2026/04/20/clean-code.html" rel="alternate" type="text/html" title="The Art of Writing Clean Code" /><published>2026-04-20T00:00:00+05:30</published><updated>2026-04-20T00:00:00+05:30</updated><id>http://localhost:4000/2026/04/20/clean-code</id><content type="html" xml:base="http://localhost:4000/2026/04/20/clean-code.html"><![CDATA[<h1 id="the-art-of-writing-clean-code">The Art of Writing Clean Code</h1>
+
+<p>Writing code that works is one thing. Writing code that’s clean, readable, and maintainable is another. Let’s explore the principles of clean code.</p>
+
+<h2 id="1-meaningful-names">1. Meaningful Names</h2>
+
+<p>Choose names that reveal intent:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Bad</span>
+<span class="kd">const</span> <span class="nx">d</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Date</span><span class="p">();</span>
+<span class="kd">const</span> <span class="nx">yyyymmdstr</span> <span class="o">=</span> <span class="nx">d</span><span class="p">.</span><span class="nf">getFullYear</span><span class="p">()</span> <span class="o">+</span> <span class="dl">'</span><span class="s1">-</span><span class="dl">'</span> <span class="o">+</span> <span class="p">(</span><span class="nx">d</span><span class="p">.</span><span class="nf">getMonth</span><span class="p">()</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="dl">'</span><span class="s1">-</span><span class="dl">'</span> <span class="o">+</span> <span class="nx">d</span><span class="p">.</span><span class="nf">getDate</span><span class="p">();</span>
+
+<span class="c1">// Good</span>
+<span class="kd">const</span> <span class="nx">today</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Date</span><span class="p">();</span>
+<span class="kd">const</span> <span class="nx">formattedDate</span> <span class="o">=</span> <span class="nf">formatDateToISO</span><span class="p">(</span><span class="nx">today</span><span class="p">);</span>
+</code></pre></div></div>
+
+<h2 id="2-functions-should-do-one-thing">2. Functions Should Do One Thing</h2>
+
+<p>Apply the Single Responsibility Principle:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Bad - does too much</span>
+<span class="kd">function</span> <span class="nf">processUserData</span><span class="p">(</span><span class="nx">user</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nf">validateUser</span><span class="p">(</span><span class="nx">user</span><span class="p">);</span>
+  <span class="kd">const</span> <span class="nx">userData</span> <span class="o">=</span> <span class="nf">formatUser</span><span class="p">(</span><span class="nx">user</span><span class="p">);</span>
+  <span class="nf">saveToDatabase</span><span class="p">(</span><span class="nx">userData</span><span class="p">);</span>
+  <span class="nf">sendEmail</span><span class="p">(</span><span class="nx">user</span><span class="p">.</span><span class="nx">email</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="c1">// Good - each function has one purpose</span>
+<span class="kd">function</span> <span class="nf">processUserData</span><span class="p">(</span><span class="nx">user</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nf">validateUser</span><span class="p">(</span><span class="nx">user</span><span class="p">);</span>
+  <span class="nf">saveFormattedUser</span><span class="p">(</span><span class="nx">user</span><span class="p">);</span>
+  <span class="nf">notifyUser</span><span class="p">(</span><span class="nx">user</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="3-keep-functions-small">3. Keep Functions Small</h2>
+
+<p>Smaller functions are easier to understand and test:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Bad - 50 lines</span>
+<span class="kd">function</span> <span class="nf">buildReport</span><span class="p">(</span><span class="nx">data</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// validation, calculation, formatting, saving...</span>
+<span class="p">}</span>
+
+<span class="c1">// Good - each function is focused</span>
+<span class="kd">function</span> <span class="nf">buildReport</span><span class="p">(</span><span class="nx">data</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kd">const</span> <span class="nx">validated</span> <span class="o">=</span> <span class="nf">validateData</span><span class="p">(</span><span class="nx">data</span><span class="p">);</span>
+  <span class="kd">const</span> <span class="nx">calculated</span> <span class="o">=</span> <span class="nf">performCalculations</span><span class="p">(</span><span class="nx">validated</span><span class="p">);</span>
+  <span class="kd">const</span> <span class="nx">formatted</span> <span class="o">=</span> <span class="nf">formatOutput</span><span class="p">(</span><span class="nx">calculated</span><span class="p">);</span>
+  <span class="k">return</span> <span class="nf">saveReport</span><span class="p">(</span><span class="nx">formatted</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="4-use-comments-wisely">4. Use Comments Wisely</h2>
+
+<p>Comments should explain <strong>why</strong>, not <strong>what</strong>:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Bad - just describes the code</span>
+<span class="kd">const</span> <span class="nx">users</span> <span class="o">=</span> <span class="nf">getUsers</span><span class="p">();</span> <span class="c1">// Get all users</span>
+
+<span class="c1">// Good - explains the business logic</span>
+<span class="c1">// We need users with active subscriptions for the billing cycle</span>
+<span class="kd">const</span> <span class="nx">activeUsers</span> <span class="o">=</span> <span class="nf">getUsers</span><span class="p">().</span><span class="nf">filter</span><span class="p">(</span><span class="nx">u</span> <span class="o">=&gt;</span> <span class="nx">u</span><span class="p">.</span><span class="nx">subscriptionActive</span><span class="p">);</span>
+</code></pre></div></div>
+
+<h2 id="5-dry---dont-repeat-yourself">5. DRY - Don’t Repeat Yourself</h2>
+
+<p>Refactor repeated code into reusable functions:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Bad - repeated validation</span>
+<span class="k">if </span><span class="p">(</span><span class="nx">email</span> <span class="o">&amp;&amp;</span> <span class="nx">email</span><span class="p">.</span><span class="nf">includes</span><span class="p">(</span><span class="dl">'</span><span class="s1">@</span><span class="dl">'</span><span class="p">))</span> <span class="p">{</span>
+  <span class="c1">// process email</span>
+<span class="p">}</span>
+<span class="k">if </span><span class="p">(</span><span class="nx">backup</span> <span class="o">&amp;&amp;</span> <span class="nx">backup</span><span class="p">.</span><span class="nf">includes</span><span class="p">(</span><span class="dl">'</span><span class="s1">@</span><span class="dl">'</span><span class="p">))</span> <span class="p">{</span>
+  <span class="c1">// process backup</span>
+<span class="p">}</span>
+
+<span class="c1">// Good - reusable function</span>
+<span class="kd">function</span> <span class="nf">isValidEmail</span><span class="p">(</span><span class="nx">email</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="nx">email</span> <span class="o">&amp;&amp;</span> <span class="nx">email</span><span class="p">.</span><span class="nf">includes</span><span class="p">(</span><span class="dl">'</span><span class="s1">@</span><span class="dl">'</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="k">if </span><span class="p">(</span><span class="nf">isValidEmail</span><span class="p">(</span><span class="nx">email</span><span class="p">))</span> <span class="p">{</span> <span class="cm">/* ... */</span> <span class="p">}</span>
+<span class="k">if </span><span class="p">(</span><span class="nf">isValidEmail</span><span class="p">(</span><span class="nx">backup</span><span class="p">))</span> <span class="p">{</span> <span class="cm">/* ... */</span> <span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="6-use-proper-error-handling">6. Use Proper Error Handling</h2>
+
+<p>Never ignore errors:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Bad</span>
+<span class="k">try</span> <span class="p">{</span>
+  <span class="nf">fetchData</span><span class="p">();</span>
+<span class="p">}</span> <span class="k">catch </span><span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// Silently failing!</span>
+<span class="p">}</span>
+
+<span class="c1">// Good</span>
+<span class="k">try</span> <span class="p">{</span>
+  <span class="nf">fetchData</span><span class="p">();</span>
+<span class="p">}</span> <span class="k">catch </span><span class="p">(</span><span class="nx">error</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">logger</span><span class="p">.</span><span class="nf">error</span><span class="p">(</span><span class="dl">'</span><span class="s1">Failed to fetch data</span><span class="dl">'</span><span class="p">,</span> <span class="nx">error</span><span class="p">);</span>
+  <span class="k">throw</span> <span class="k">new</span> <span class="nc">CustomError</span><span class="p">(</span><span class="dl">'</span><span class="s1">Data fetch failed</span><span class="dl">'</span><span class="p">,</span> <span class="nx">error</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="7-keep-it-simple-kiss">7. Keep It Simple (KISS)</h2>
+
+<p>Avoid over-engineering:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Over-engineered</span>
+<span class="kd">const</span> <span class="nx">calculatePrice</span> <span class="o">=</span> <span class="p">(</span><span class="nx">quantity</span><span class="p">,</span> <span class="nx">unitPrice</span><span class="p">)</span> <span class="o">=&gt;</span> 
+  <span class="nx">quantity</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="p">?</span> <span class="p">(</span><span class="nx">quantity</span> <span class="o">*</span> <span class="nx">unitPrice</span><span class="p">)</span> <span class="o">-</span> <span class="p">(</span><span class="nx">quantity</span> <span class="o">&gt;</span> <span class="mi">10</span> <span class="p">?</span> <span class="nx">quantity</span> <span class="o">*</span> <span class="nx">unitPrice</span> <span class="o">*</span> <span class="mf">0.1</span> <span class="p">:</span> <span class="mi">0</span><span class="p">)</span> <span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+
+<span class="c1">// Simple and clear</span>
+<span class="kd">function</span> <span class="nf">calculatePrice</span><span class="p">(</span><span class="nx">quantity</span><span class="p">,</span> <span class="nx">unitPrice</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kd">const</span> <span class="nx">basePrice</span> <span class="o">=</span> <span class="nx">quantity</span> <span class="o">*</span> <span class="nx">unitPrice</span><span class="p">;</span>
+  <span class="kd">const</span> <span class="nx">discount</span> <span class="o">=</span> <span class="nx">quantity</span> <span class="o">&gt;</span> <span class="mi">10</span> <span class="p">?</span> <span class="nx">basePrice</span> <span class="o">*</span> <span class="mf">0.1</span> <span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+  <span class="k">return</span> <span class="nb">Math</span><span class="p">.</span><span class="nf">max</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nx">basePrice</span> <span class="o">-</span> <span class="nx">discount</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="8-testing-is-not-optional">8. Testing is Not Optional</h2>
+
+<p>Write tests as you write code:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">describe</span><span class="p">(</span><span class="dl">'</span><span class="s1">calculateDiscount</span><span class="dl">'</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="nf">it</span><span class="p">(</span><span class="dl">'</span><span class="s1">should apply 10% discount for quantities over 10</span><span class="dl">'</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="nf">expect</span><span class="p">(</span><span class="nf">calculateDiscount</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">100</span><span class="p">)).</span><span class="nf">toBe</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span>
+  <span class="p">});</span>
+  
+  <span class="nf">it</span><span class="p">(</span><span class="dl">'</span><span class="s1">should not apply discount for quantities &lt;= 10</span><span class="dl">'</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="nf">expect</span><span class="p">(</span><span class="nf">calculateDiscount</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">100</span><span class="p">)).</span><span class="nf">toBe</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+  <span class="p">});</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<h2 id="9-consistent-formatting">9. Consistent Formatting</h2>
+
+<p>Use a formatter like Prettier:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Let Prettier handle this</span>
+<span class="kd">const</span> <span class="nx">user</span> <span class="o">=</span> <span class="p">{</span> <span class="na">name</span><span class="p">:</span> <span class="dl">"</span><span class="s2">John</span><span class="dl">"</span><span class="p">,</span> <span class="na">age</span><span class="p">:</span> <span class="mi">30</span><span class="p">,</span> <span class="na">email</span><span class="p">:</span> <span class="dl">"</span><span class="s2">john@example.com</span><span class="dl">"</span> <span class="p">};</span>
+<span class="kd">const</span> <span class="nx">result</span> <span class="o">=</span> <span class="nf">someFunction</span><span class="p">(</span><span class="nx">arg1</span><span class="p">,</span> <span class="nx">arg2</span><span class="p">,</span> <span class="nx">arg3</span><span class="p">);</span>
+</code></pre></div></div>
+
+<h2 id="10-code-review-culture">10. Code Review Culture</h2>
+
+<p>Have peers review your code. Fresh eyes catch issues you miss!</p>
+
+<h2 id="key-principles">Key Principles</h2>
+
+<ul>
+  <li><strong>Readability</strong> - Your code is read 10x more than it’s written</li>
+  <li><strong>Maintainability</strong> - Future you will thank present you</li>
+  <li><strong>Testability</strong> - Easy to test = easy to verify</li>
+  <li><strong>Reusability</strong> - Write once, use many times</li>
+</ul>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Clean code is not about being perfect. It’s about respect—for your team, for future maintainers, and for yourself reading this code months later.</p>
+
+<blockquote>
+  <p>“Any fool can write code that a computer can understand. Good programmers write code that humans can understand.” - Martin Fowler</p>
+</blockquote>
+
+<hr />
+
+<p><strong>What’s your clean code practice? Drop a comment!</strong> ✨</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Best practices and principles for writing maintainable, clean code that your team will love.]]></summary></entry><entry><title type="html">Responsive Web Design Best Practices</title><link href="http://localhost:4000/2026/04/18/responsive-design.html" rel="alternate" type="text/html" title="Responsive Web Design Best Practices" /><published>2026-04-18T00:00:00+05:30</published><updated>2026-04-18T00:00:00+05:30</updated><id>http://localhost:4000/2026/04/18/responsive-design</id><content type="html" xml:base="http://localhost:4000/2026/04/18/responsive-design.html"><![CDATA[<h1 id="responsive-web-design-best-practices">Responsive Web Design Best Practices</h1>
+
+<p>In 2026, designing for multiple devices isn’t optional—it’s essential. Let’s explore best practices for responsive web design.</p>
+
+<h2 id="1-mobile-first-approach">1. Mobile-First Approach</h2>
+
+<p>Start with mobile design, then enhance for larger screens:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">/* Mobile first */</span>
+<span class="nc">.container</span> <span class="p">{</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">14px</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/* Tablet and up */</span>
+<span class="k">@media</span> <span class="p">(</span><span class="n">min-width</span><span class="p">:</span> <span class="m">768px</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nc">.container</span> <span class="p">{</span>
+    <span class="nl">font-size</span><span class="p">:</span> <span class="m">16px</span><span class="p">;</span>
+    <span class="nl">padding</span><span class="p">:</span> <span class="m">20px</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c">/* Desktop and up */</span>
+<span class="k">@media</span> <span class="p">(</span><span class="n">min-width</span><span class="p">:</span> <span class="m">1024px</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nc">.container</span> <span class="p">{</span>
+    <span class="nl">font-size</span><span class="p">:</span> <span class="m">18px</span><span class="p">;</span>
+    <span class="nl">padding</span><span class="p">:</span> <span class="m">30px</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="2-flexible-grid-layout">2. Flexible Grid Layout</h2>
+
+<p>Use CSS Grid for powerful layouts:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.grid</span> <span class="p">{</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="nb">grid</span><span class="p">;</span>
+  <span class="nl">grid-template-columns</span><span class="p">:</span> <span class="nf">repeat</span><span class="p">(</span><span class="nb">auto-fit</span><span class="p">,</span> <span class="nf">minmax</span><span class="p">(</span><span class="m">250px</span><span class="p">,</span> <span class="m">1fr</span><span class="p">));</span>
+  <span class="nl">gap</span><span class="p">:</span> <span class="m">20px</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="3-responsive-images">3. Responsive Images</h2>
+
+<p>Make images scale properly:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- Use srcset for multiple resolutions --&gt;</span>
+<span class="nt">&lt;img</span> 
+  <span class="na">src=</span><span class="s">"image.jpg"</span> 
+  <span class="na">srcset=</span><span class="s">"image-small.jpg 500w, image-large.jpg 1000w"</span>
+  <span class="na">sizes=</span><span class="s">"(max-width: 600px) 100vw, 50vw"</span>
+  <span class="na">alt=</span><span class="s">"Description"</span>
+<span class="nt">/&gt;</span>
+
+<span class="c">&lt;!-- Or use picture element --&gt;</span>
+<span class="nt">&lt;picture&gt;</span>
+  <span class="nt">&lt;source</span> <span class="na">media=</span><span class="s">"(max-width: 600px)"</span> <span class="na">srcset=</span><span class="s">"image-mobile.jpg"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;source</span> <span class="na">media=</span><span class="s">"(max-width: 1024px)"</span> <span class="na">srcset=</span><span class="s">"image-tablet.jpg"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"image-desktop.jpg"</span> <span class="na">alt=</span><span class="s">"Description"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/picture&gt;</span>
+</code></pre></div></div>
+
+<h2 id="4-flexible-typography">4. Flexible Typography</h2>
+
+<p>Scale fonts based on screen size:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">h1</span> <span class="p">{</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="nf">clamp</span><span class="p">(</span><span class="m">1.5rem</span><span class="p">,</span> <span class="m">5vw</span><span class="p">,</span> <span class="m">3rem</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="c">/* Ensures readability while scaling */</span>
+<span class="nt">body</span> <span class="p">{</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="nf">clamp</span><span class="p">(</span><span class="m">14px</span><span class="p">,</span> <span class="m">2vw</span><span class="p">,</span> <span class="m">18px</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="5-flexbox-for-components">5. Flexbox for Components</h2>
+
+<p>Perfect for flexible component layouts:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.navbar</span> <span class="p">{</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="nb">flex</span><span class="p">;</span>
+  <span class="nl">justify-content</span><span class="p">:</span> <span class="nb">space-between</span><span class="p">;</span>
+  <span class="nl">align-items</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+  <span class="nl">flex-wrap</span><span class="p">:</span> <span class="nb">wrap</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.nav-items</span> <span class="p">{</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="nb">flex</span><span class="p">;</span>
+  <span class="nl">gap</span><span class="p">:</span> <span class="m">20px</span><span class="p">;</span>
+  <span class="nl">flex-direction</span><span class="p">:</span> <span class="nb">column</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">@media</span> <span class="p">(</span><span class="n">min-width</span><span class="p">:</span> <span class="m">768px</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nc">.nav-items</span> <span class="p">{</span>
+    <span class="nl">flex-direction</span><span class="p">:</span> <span class="nb">row</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="6-touch-friendly-design">6. Touch-Friendly Design</h2>
+
+<p>Make buttons and links easy to tap:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">/* Minimum 44x44px for touch targets */</span>
+<span class="nt">button</span> <span class="p">{</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">12px</span> <span class="m">16px</span><span class="p">;</span>
+  <span class="nl">min-height</span><span class="p">:</span> <span class="m">44px</span><span class="p">;</span>
+  <span class="nl">min-width</span><span class="p">:</span> <span class="m">44px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/* Larger tap targets on mobile */</span>
+<span class="k">@media</span> <span class="p">(</span><span class="n">max-width</span><span class="p">:</span> <span class="m">768px</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nt">button</span> <span class="p">{</span>
+    <span class="nl">padding</span><span class="p">:</span> <span class="m">16px</span> <span class="m">20px</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="7-performance-considerations">7. Performance Considerations</h2>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- Load only what's needed --&gt;</span>
+<span class="nt">&lt;picture&gt;</span>
+  <span class="nt">&lt;source</span> <span class="na">media=</span><span class="s">"(max-width: 600px)"</span> <span class="na">srcset=</span><span class="s">"small.webp"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"fallback.jpg"</span> <span class="na">alt=</span><span class="s">""</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/picture&gt;</span>
+
+<span class="c">&lt;!-- Lazy load images --&gt;</span>
+<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"image.jpg"</span> <span class="na">loading=</span><span class="s">"lazy"</span> <span class="na">alt=</span><span class="s">""</span><span class="nt">&gt;</span>
+</code></pre></div></div>
+
+<h2 id="8-testing-across-devices">8. Testing Across Devices</h2>
+
+<p>Always test on:</p>
+<ul>
+  <li>✅ Mobile phones (various sizes)</li>
+  <li>✅ Tablets (portrait &amp; landscape)</li>
+  <li>✅ Desktops</li>
+  <li>✅ Large screens</li>
+  <li>✅ Different orientations</li>
+</ul>
+
+<p>Use browser DevTools for device emulation, but also test on real devices!</p>
+
+<h2 id="9-common-breakpoints">9. Common Breakpoints</h2>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">/* Mobile: 320px - 767px */</span>
+<span class="k">@media</span> <span class="p">(</span><span class="n">max-width</span><span class="p">:</span> <span class="m">767px</span><span class="p">)</span> <span class="p">{</span> <span class="p">}</span>
+
+<span class="c">/* Tablet: 768px - 1023px */</span>
+<span class="k">@media</span> <span class="p">(</span><span class="n">min-width</span><span class="p">:</span> <span class="m">768px</span><span class="p">)</span> <span class="p">{</span> <span class="p">}</span>
+
+<span class="c">/* Desktop: 1024px and up */</span>
+<span class="k">@media</span> <span class="p">(</span><span class="n">min-width</span><span class="p">:</span> <span class="m">1024px</span><span class="p">)</span> <span class="p">{</span> <span class="p">}</span>
+
+<span class="c">/* Large Desktop: 1440px and up */</span>
+<span class="k">@media</span> <span class="p">(</span><span class="n">min-width</span><span class="p">:</span> <span class="m">1440px</span><span class="p">)</span> <span class="p">{</span> <span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="10-accessibility-goes-hand-in-hand">10. Accessibility Goes Hand-in-Hand</h2>
+
+<ul>
+  <li>Use semantic HTML</li>
+  <li>Ensure sufficient color contrast</li>
+  <li>Test with screen readers</li>
+  <li>Provide keyboard navigation</li>
+</ul>
+
+<h2 id="tools--frameworks">Tools &amp; Frameworks</h2>
+
+<ul>
+  <li><strong>Tailwind CSS</strong> - Utility-first CSS with responsive helpers</li>
+  <li><strong>Bootstrap</strong> - Pre-built responsive components</li>
+  <li><strong>CSS Grid &amp; Flexbox</strong> - Browser-native tools</li>
+  <li><strong>Chrome DevTools</strong> - Built-in device testing</li>
+</ul>
+
+<h2 id="checklist">Checklist</h2>
+
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Mobile design looks good</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Touch targets are 44px minimum</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Images scale properly</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Typography is readable</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Navigation works on mobile</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Form inputs are touch-friendly</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Tested on real devices</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Performance is good</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Accessibility is considered</li>
+</ul>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Responsive design is about creating experiences that work for everyone, on any device. It’s not just about making things fit—it’s about making them work beautifully.</p>
+
+<hr />
+
+<p><strong>What device do you design for first? Share your approach!</strong> 📱💻🖥️</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Master responsive design principles to create websites that work beautifully on any device.]]></summary></entry></feed>

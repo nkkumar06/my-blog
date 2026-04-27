@@ -2,15 +2,30 @@
 layout: default
 title: Home
 ---
-<h1 class="text-3xl font-bold mb-6">All posts combined</h1>
-<div class="grid md:grid-cols-3 gap-8">
-  {% for post in site.posts %}
-    <article class="bg-white p-6 rounded-lg shadow hover:shadow-lg">
-      <h2 class="text-xl font-semibold mb-2">
-        <a href="{{ post.url }}" class="text-blue-600 hover:underline">{{ post.title }}</a>
-      </h2>
-      <p class="text-gray-600 mb-4">{{ post.excerpt }}</p>
-      <a href="{{ post.url }}" class="text-blue-600 font-semibold hover:underline">Read more →</a>
-    </article>
-  {% endfor %}
-</div>
+
+<!-- Hero Section -->
+<section class="hero-section bg-gradient-to-r from-blue-600 via-purple-600 to-pink-500 text-white rounded-lg overflow-hidden shadow-2xl mb-16" style="padding: 80px 40px; text-align: center; background-attachment: fixed;">
+  <div class="max-w-3xl mx-auto">
+    <h1 class="text-5xl font-bold mb-4" style="font-family: 'Playfair Display', serif; color: white;">{{ site.title }}</h1>
+    <p class="text-xl mb-6 opacity-90">{{ site.description }}</p>
+    <p class="text-lg opacity-85 mb-8">Explore insights, ideas, and stories crafted with passion</p>
+    <a href="#posts" class="inline-block bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition duration-300 transform hover:scale-105">Explore Posts</a>
+  </div>
+</section>
+
+<!-- Posts Section -->
+<section id="posts">
+  <h2 class="text-4xl font-bold mb-10 text-center">Latest Posts</h2>
+  <div class="grid md:grid-cols-3 gap-8">
+    {% for post in site.posts %}
+      <article class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+        <div class="text-sm text-gray-500 mb-2">{{ post.date | date: "%B %d, %Y" }}</div>
+        <h3 class="text-2xl font-bold mb-2">
+          <a href="{{ post.url }}" class="text-gray-900 hover:text-blue-600 transition-colors">{{ post.title }}</a>
+        </h3>
+        <p class="text-gray-600 mb-4 leading-relaxed">{{ post.excerpt }}</p>
+        <a href="{{ post.url }}" class="text-blue-600 font-semibold hover:text-blue-700 transition-colors">Read more →</a>
+      </article>
+    {% endfor %}
+  </div>
+</section>

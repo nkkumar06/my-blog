@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Responsive Web Design Best Practices | Nishant's Vlogs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-50 text-gray-800" style="font-family: 'Poppins', sans-serif;">
+
+  <!-- Navbar -->
+  <nav class="bg-blue-600 text-white p-4">
+    <div class="max-w-6xl mx-auto flex justify-between">
+      <a href="/" class="font-bold text-xl">Nishant's Vlogs</a>
+      <a href="/about" class="hover:underline">About</a>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <main class="max-w-6xl mx-auto px-6 py-10">
+    <h1 id="responsive-web-design-best-practices">Responsive Web Design Best Practices</h1>
+
+<p>In 2026, designing for multiple devices isn’t optional—it’s essential. Let’s explore best practices for responsive web design.</p>
+
+<h2 id="1-mobile-first-approach">1. Mobile-First Approach</h2>
+
+<p>Start with mobile design, then enhance for larger screens:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">/* Mobile first */</span>
+<span class="nc">.container</span> <span class="p">{</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">14px</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/* Tablet and up */</span>
+<span class="k">@media</span> <span class="p">(</span><span class="n">min-width</span><span class="p">:</span> <span class="m">768px</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nc">.container</span> <span class="p">{</span>
+    <span class="nl">font-size</span><span class="p">:</span> <span class="m">16px</span><span class="p">;</span>
+    <span class="nl">padding</span><span class="p">:</span> <span class="m">20px</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c">/* Desktop and up */</span>
+<span class="k">@media</span> <span class="p">(</span><span class="n">min-width</span><span class="p">:</span> <span class="m">1024px</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nc">.container</span> <span class="p">{</span>
+    <span class="nl">font-size</span><span class="p">:</span> <span class="m">18px</span><span class="p">;</span>
+    <span class="nl">padding</span><span class="p">:</span> <span class="m">30px</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="2-flexible-grid-layout">2. Flexible Grid Layout</h2>
+
+<p>Use CSS Grid for powerful layouts:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.grid</span> <span class="p">{</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="nb">grid</span><span class="p">;</span>
+  <span class="nl">grid-template-columns</span><span class="p">:</span> <span class="nf">repeat</span><span class="p">(</span><span class="nb">auto-fit</span><span class="p">,</span> <span class="nf">minmax</span><span class="p">(</span><span class="m">250px</span><span class="p">,</span> <span class="m">1fr</span><span class="p">));</span>
+  <span class="nl">gap</span><span class="p">:</span> <span class="m">20px</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="3-responsive-images">3. Responsive Images</h2>
+
+<p>Make images scale properly:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- Use srcset for multiple resolutions --&gt;</span>
+<span class="nt">&lt;img</span> 
+  <span class="na">src=</span><span class="s">"image.jpg"</span> 
+  <span class="na">srcset=</span><span class="s">"image-small.jpg 500w, image-large.jpg 1000w"</span>
+  <span class="na">sizes=</span><span class="s">"(max-width: 600px) 100vw, 50vw"</span>
+  <span class="na">alt=</span><span class="s">"Description"</span>
+<span class="nt">/&gt;</span>
+
+<span class="c">&lt;!-- Or use picture element --&gt;</span>
+<span class="nt">&lt;picture&gt;</span>
+  <span class="nt">&lt;source</span> <span class="na">media=</span><span class="s">"(max-width: 600px)"</span> <span class="na">srcset=</span><span class="s">"image-mobile.jpg"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;source</span> <span class="na">media=</span><span class="s">"(max-width: 1024px)"</span> <span class="na">srcset=</span><span class="s">"image-tablet.jpg"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"image-desktop.jpg"</span> <span class="na">alt=</span><span class="s">"Description"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/picture&gt;</span>
+</code></pre></div></div>
+
+<h2 id="4-flexible-typography">4. Flexible Typography</h2>
+
+<p>Scale fonts based on screen size:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">h1</span> <span class="p">{</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="nf">clamp</span><span class="p">(</span><span class="m">1.5rem</span><span class="p">,</span> <span class="m">5vw</span><span class="p">,</span> <span class="m">3rem</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="c">/* Ensures readability while scaling */</span>
+<span class="nt">body</span> <span class="p">{</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="nf">clamp</span><span class="p">(</span><span class="m">14px</span><span class="p">,</span> <span class="m">2vw</span><span class="p">,</span> <span class="m">18px</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="5-flexbox-for-components">5. Flexbox for Components</h2>
+
+<p>Perfect for flexible component layouts:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.navbar</span> <span class="p">{</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="nb">flex</span><span class="p">;</span>
+  <span class="nl">justify-content</span><span class="p">:</span> <span class="nb">space-between</span><span class="p">;</span>
+  <span class="nl">align-items</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+  <span class="nl">flex-wrap</span><span class="p">:</span> <span class="nb">wrap</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.nav-items</span> <span class="p">{</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="nb">flex</span><span class="p">;</span>
+  <span class="nl">gap</span><span class="p">:</span> <span class="m">20px</span><span class="p">;</span>
+  <span class="nl">flex-direction</span><span class="p">:</span> <span class="nb">column</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">@media</span> <span class="p">(</span><span class="n">min-width</span><span class="p">:</span> <span class="m">768px</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nc">.nav-items</span> <span class="p">{</span>
+    <span class="nl">flex-direction</span><span class="p">:</span> <span class="nb">row</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="6-touch-friendly-design">6. Touch-Friendly Design</h2>
+
+<p>Make buttons and links easy to tap:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">/* Minimum 44x44px for touch targets */</span>
+<span class="nt">button</span> <span class="p">{</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">12px</span> <span class="m">16px</span><span class="p">;</span>
+  <span class="nl">min-height</span><span class="p">:</span> <span class="m">44px</span><span class="p">;</span>
+  <span class="nl">min-width</span><span class="p">:</span> <span class="m">44px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/* Larger tap targets on mobile */</span>
+<span class="k">@media</span> <span class="p">(</span><span class="n">max-width</span><span class="p">:</span> <span class="m">768px</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nt">button</span> <span class="p">{</span>
+    <span class="nl">padding</span><span class="p">:</span> <span class="m">16px</span> <span class="m">20px</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="7-performance-considerations">7. Performance Considerations</h2>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- Load only what's needed --&gt;</span>
+<span class="nt">&lt;picture&gt;</span>
+  <span class="nt">&lt;source</span> <span class="na">media=</span><span class="s">"(max-width: 600px)"</span> <span class="na">srcset=</span><span class="s">"small.webp"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"fallback.jpg"</span> <span class="na">alt=</span><span class="s">""</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/picture&gt;</span>
+
+<span class="c">&lt;!-- Lazy load images --&gt;</span>
+<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"image.jpg"</span> <span class="na">loading=</span><span class="s">"lazy"</span> <span class="na">alt=</span><span class="s">""</span><span class="nt">&gt;</span>
+</code></pre></div></div>
+
+<h2 id="8-testing-across-devices">8. Testing Across Devices</h2>
+
+<p>Always test on:</p>
+<ul>
+  <li>✅ Mobile phones (various sizes)</li>
+  <li>✅ Tablets (portrait &amp; landscape)</li>
+  <li>✅ Desktops</li>
+  <li>✅ Large screens</li>
+  <li>✅ Different orientations</li>
+</ul>
+
+<p>Use browser DevTools for device emulation, but also test on real devices!</p>
+
+<h2 id="9-common-breakpoints">9. Common Breakpoints</h2>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">/* Mobile: 320px - 767px */</span>
+<span class="k">@media</span> <span class="p">(</span><span class="n">max-width</span><span class="p">:</span> <span class="m">767px</span><span class="p">)</span> <span class="p">{</span> <span class="p">}</span>
+
+<span class="c">/* Tablet: 768px - 1023px */</span>
+<span class="k">@media</span> <span class="p">(</span><span class="n">min-width</span><span class="p">:</span> <span class="m">768px</span><span class="p">)</span> <span class="p">{</span> <span class="p">}</span>
+
+<span class="c">/* Desktop: 1024px and up */</span>
+<span class="k">@media</span> <span class="p">(</span><span class="n">min-width</span><span class="p">:</span> <span class="m">1024px</span><span class="p">)</span> <span class="p">{</span> <span class="p">}</span>
+
+<span class="c">/* Large Desktop: 1440px and up */</span>
+<span class="k">@media</span> <span class="p">(</span><span class="n">min-width</span><span class="p">:</span> <span class="m">1440px</span><span class="p">)</span> <span class="p">{</span> <span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="10-accessibility-goes-hand-in-hand">10. Accessibility Goes Hand-in-Hand</h2>
+
+<ul>
+  <li>Use semantic HTML</li>
+  <li>Ensure sufficient color contrast</li>
+  <li>Test with screen readers</li>
+  <li>Provide keyboard navigation</li>
+</ul>
+
+<h2 id="tools--frameworks">Tools &amp; Frameworks</h2>
+
+<ul>
+  <li><strong>Tailwind CSS</strong> - Utility-first CSS with responsive helpers</li>
+  <li><strong>Bootstrap</strong> - Pre-built responsive components</li>
+  <li><strong>CSS Grid &amp; Flexbox</strong> - Browser-native tools</li>
+  <li><strong>Chrome DevTools</strong> - Built-in device testing</li>
+</ul>
+
+<h2 id="checklist">Checklist</h2>
+
+<ul class="task-list">
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Mobile design looks good</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Touch targets are 44px minimum</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Images scale properly</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Typography is readable</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Navigation works on mobile</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Form inputs are touch-friendly</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Tested on real devices</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Performance is good</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Accessibility is considered</li>
+</ul>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Responsive design is about creating experiences that work for everyone, on any device. It’s not just about making things fit—it’s about making them work beautifully.</p>
+
+<hr />
+
+<p><strong>What device do you design for first? Share your approach!</strong> 📱💻🖥️</p>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300 py-6 text-center">
+    <p>&copy; 2026 Nishant's Vlogs</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Getting Started with Jekyll & GitHub Pages | Nishant's Vlogs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-50 text-gray-800" style="font-family: 'Poppins', sans-serif;">
+
+  <!-- Navbar -->
+  <nav class="bg-blue-600 text-white p-4">
+    <div class="max-w-6xl mx-auto flex justify-between">
+      <a href="/" class="font-bold text-xl">Nishant's Vlogs</a>
+      <a href="/about" class="hover:underline">About</a>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <main class="max-w-6xl mx-auto px-6 py-10">
+    <h1 id="getting-started-with-jekyll--github-pages">Getting Started with Jekyll &amp; GitHub Pages</h1>
+
+<p>Jekyll and GitHub Pages are a match made in heaven for developers who want a simple, fast, and free blogging platform. In this post, I’ll walk you through the basics.</p>
+
+<h2 id="what-is-jekyll">What is Jekyll?</h2>
+
+<p>Jekyll is a <strong>static site generator</strong> that transforms your plain text files into a beautiful website. It’s:</p>
+<ul>
+  <li><strong>Fast</strong> - No database queries, just static HTML</li>
+  <li><strong>Secure</strong> - No server-side code to hack</li>
+  <li><strong>Simple</strong> - Write in Markdown, deploy with git</li>
+</ul>
+
+<h2 id="why-github-pages">Why GitHub Pages?</h2>
+
+<p>GitHub Pages provides <strong>free hosting</strong> directly from your GitHub repository. It has built-in Jekyll support, which means you can:</p>
+<ul>
+  <li>Write posts in Markdown</li>
+  <li>Push to GitHub</li>
+  <li>Your site updates automatically</li>
+</ul>
+
+<h2 id="getting-started">Getting Started</h2>
+
+<ol>
+  <li><strong>Install Ruby</strong> - Download from <a href="https://rubyinstaller.org/">rubyinstaller.org</a></li>
+  <li><strong>Install Jekyll</strong> - Run <code class="language-plaintext highlighter-rouge">gem install jekyll bundler</code></li>
+  <li><strong>Create a new site</strong> - Run <code class="language-plaintext highlighter-rouge">jekyll new my-blog</code></li>
+  <li><strong>Run locally</strong> - Run <code class="language-plaintext highlighter-rouge">bundle exec jekyll serve</code></li>
+  <li><strong>Visit</strong> - Open <code class="language-plaintext highlighter-rouge">http://localhost:4000</code></li>
+</ol>
+
+<h2 id="creating-your-first-post">Creating Your First Post</h2>
+
+<p>Create a file in <code class="language-plaintext highlighter-rouge">_posts/</code> folder with the format: <code class="language-plaintext highlighter-rouge">YYYY-MM-DD-title.md</code></p>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
+<span class="na">layout</span><span class="pi">:</span> <span class="s">post</span>
+<span class="na">title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">My</span><span class="nv"> </span><span class="s">First</span><span class="nv"> </span><span class="s">Post"</span>
+<span class="na">date</span><span class="pi">:</span> <span class="s">2026-04-26</span>
+<span class="nn">---</span>
+
+<span class="gh"># Hello World!</span>
+
+This is my first post written in Markdown.
+</code></pre></div></div>
+
+<h2 id="deploying-to-github-pages">Deploying to GitHub Pages</h2>
+
+<ol>
+  <li>Push your site to GitHub</li>
+  <li>Go to repository Settings → Pages</li>
+  <li>Select “Deploy from a branch” → main branch</li>
+  <li>Your site will be live at <code class="language-plaintext highlighter-rouge">https://yourusername.github.io</code></li>
+</ol>
+
+<p>That’s it! You now have a live blog! 🎉</p>
+
+<hr />
+
+<p><strong>Next Steps:</strong></p>
+<ul>
+  <li>Customize your theme</li>
+  <li>Add more posts</li>
+  <li>Connect a custom domain</li>
+  <li>Add comments (using Disqus or similar)</li>
+</ul>
+
+<p>Happy blogging!</p>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300 py-6 text-center">
+    <p>&copy; 2026 Nishant's Vlogs</p>
+  </footer>
+
+</body>
+</html>
